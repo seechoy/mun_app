@@ -1,0 +1,8 @@
+<h1>NEW CONFERENCE</h1>
+
+<%= form_for(@conference) do |f| %>
+  <%= render 'conference_fields', :f => f %>
+  <div class="actions">
+    <%= f.submit "MAKE IT" %>
+  </div>
+<% end %>

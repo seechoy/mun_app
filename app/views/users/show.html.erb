@@ -1,0 +1,25 @@
+<table class="profile" summary="PROFILE INFO">
+  <tr>
+    <td class="main">
+      <h1>
+        <%= @user.alias %>
+      </h1>
+      <% if @user.admin? %>
+        HOST OF:
+        <ul class="users">
+          <%= render @user.conferences %>
+        </ul>
+      <% end %>
+      ATTENDEE AT:
+      <ul class="users">
+        <%= render @user.attending %>
+      </ul>
+    </td>
+    <td class="sidebar round">
+      <strong>USER NAME:</strong> <%= link_to @user.alias, @user %><br />
+      <% if current_user?(@user) %>
+        <%= link_to "EDIT", edit_user_path(@user) %>
+      <% end %>
+    </td>
+  </tr>
+</table>

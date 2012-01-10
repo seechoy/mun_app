@@ -1,0 +1,22 @@
+<table class="profile" summary="">
+  <tr>
+    <td class="main">
+      <h1>
+        <%= @title %>
+      </h1>
+    </td>
+    <td class="sidebar round">
+      <strong>HOST:</strong> <%= link_to @user.alias, @user %><br />
+      <strong>DATE:</strong> <%= @conference.date %><br />
+      <strong>LOCATION:</strong> <%= @conference.location %><br />
+      <%= render 'attend_form' if signed_in? %>
+      <% if current_user?(@user) %>
+        <%= link_to "EDIT", edit_conference_path(@conference) %><br />
+        <%= link_to "DELETE", @conference, 
+                             :method => :delete, 
+                             :confirm => "YOU SURE?!",
+                             :title => "DELETE #{@conference.title}" %>
+      <% end %>
+    </td>
+  </tr>
+</table>

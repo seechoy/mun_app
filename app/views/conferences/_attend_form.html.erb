@@ -1,0 +1,9 @@
+<% unless current_user?(@user) %>
+  <div id="attend_form">
+  <% if current_user.attending?(@conference) %>
+    <%= render 'unattend' %>
+  <% else %>
+    <%= render 'attend' %>
+  <% end %>
+  </div>
+<% end %>

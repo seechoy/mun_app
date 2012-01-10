@@ -1,0 +1,175 @@
+.container {
+  width: 800px;
+}
+
+body {
+  background: #a44;
+}
+
+header {
+  padding-top: 20px;
+}
+
+header img {
+  padding 1em;
+  background: #ff7;
+}
+
+section {
+  margin-top: 1em;
+  font-size: 120%;
+  padding: 20px;
+  background: #ff7;
+}
+
+section h1 {
+  font-size: 200%;
+}
+
+/* Links */
+
+a {
+  color: #878;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #a89;
+  text-decoration: underline;
+}
+
+a:visited {
+  color: #a89;
+}
+
+/* Navigation */
+
+nav {
+  float: right;
+}
+
+nav {
+  background-color: #ff7;
+  padding: 0 0.7em;
+  white-space: nowrap;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  list-style-type: none;
+  display: inline-block;
+  padding: 0.2em 0;
+}
+
+nav ul li a {
+  padding: 0 5px;
+  font-weight: bold;
+}
+
+nav ul li a:visited {
+  color: #878;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Round corners */
+
+.round {
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+}
+
+footer {
+  text-align: center;
+  margin-top: 10px;
+  width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+footer nav {
+  float: none;
+}
+
+/* User show page */
+
+table.profile {
+  width: 100%;
+  margin-bottom: 0;
+}
+
+td.main {
+  width: 70%;
+  padding: 1em;
+}
+
+td.sidebar {
+  width: 30%;
+  padding: 1em;
+  vertical-align: top;
+  background: #ec3;
+}
+
+/* Sign up form */
+
+div.field, div.actions {
+  margin-bottom: 10px;
+}
+
+/* Error messages */
+
+.field_with_errors {
+  margin-top: 10px;
+  padding: 2px;
+  background-color: #c00;
+  display: table;
+}
+
+.field_with_errors label {
+  color: #ff7;
+}
+
+#error_explanation {
+  width: 400px;
+  border: 2px solid #c00;
+  padding: 7px;
+  padding-bottom: 12px;
+  margin-bottom: 20px;
+  background-color: #cc9;
+}
+
+#error_explanation h2 {
+  text-align: left;
+  font-weight: bold;
+  padding: 5px 5px 5px 15px;
+  font-size: 12px;
+  margin: -7px;
+  background-color: #a44;
+  color: #ff7;
+}
+
+#error_explanation p {
+  color: #433;
+  margin-bottom: 0;
+  padding: 5px;
+}
+
+#error_explanation ul li {
+  font-size: 12px;
+  list-style: square;
+}
+
+ul.users {
+  margin-top: 1em;
+}
+
+.users li {
+  list-style: none;
+}

@@ -1,0 +1,8 @@
+<h1>MUN APP OF DOOM</h1>
+<p>
+  <% if signed_in? and current_user.admin? %>
+    <%= link_to "MAKE A NEW CONFERENCE!!", new_conference_path %>
+  <% else %>
+    <%= image_tag("mun_face.jpg", :alt => "ROBMAN SAYS HELLO") %>
+  <% end %>
+</p>

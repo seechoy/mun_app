@@ -1,0 +1,19 @@
+<header>
+  <%= link_to logo, root_path %>
+  <nav class="round">
+    <ul>
+      <li><%= link_to "HOME", root_path %></li>
+      <li><%= link_to "CONFERENCES", conferences_path %></li>
+      <% if signed_in? %>
+      <li><%= link_to "USERS", users_path %></li>
+      <li><%= link_to "PROFILE", current_user %></li>
+      <% end %>
+      <li><%= link_to "HELP", help_path %></li>
+      <% if signed_in? %>
+      <li><%= link_to "SIGN OUT", signout_path, :method => :delete %></li>
+      <% else %>
+      <li><%= link_to "SIGN IN", signin_path %></li>
+      <% end %>
+    </ul>
+  </nav>
+</header>
